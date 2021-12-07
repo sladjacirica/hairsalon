@@ -1,0 +1,145 @@
+:root {
+    --green: #8bc34a;
+    --transition: .3s ease;
+}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+.btn-dark{
+    background: black;
+    padding: 15px 40px;
+    border-radius: 0;
+}
+.underline{
+    border: 1px solid var(--green);
+    width:20%;
+}
+/***nav***/
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color:var(--green)!important; 
+}
+.nav-item{
+  text-transform: uppercase;
+}
+.nav-item a:hover{
+   color: var(--green)!important;
+   transition: var(--transition);
+  }
+  /***slider***/
+  .carousel-caption{
+      bottom:35%;
+  }
+  .carousel-caption p{
+    background: var(--green);
+    display: inline-block;
+    padding: 10px;
+}
+  /***welcome***/
+
+.welcome h2{
+    font-size: 3rem;
+}
+.welcome h2 span{
+    color: var(--green);
+    font-style: italic;
+    font-weight: bold;
+}
+.welcome a{
+    color: var(--green);
+}
+.welcome h3{
+    color: var(--green);
+}
+.welcome .col-md-4:last-child span{
+    font-weight: bold;
+}
+/***welcome***/
+.featuredServices i{
+    color: var(--green);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/***newHairstyle***/
+.newHairstyle  .col-md-5 {
+    background: white;
+    height: 50vh;
+    margin-left:-80px ;
+}
+.experience{
+    border-radius: 0!important;
+    margin-bottom: 0;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/experience.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 70vh;
+}
+/***footer***/
+footer{
+    color: grey;
+}
+footer a{
+    color:gray;
+}
+footer a:hover{
+    color: var(--green);
+}
+footer .col-md-2 .pb
+{
+    margin-top: 18px;
+}
+footer button{
+    position: relative;
+    top: -2px;
+    left: -5px;
+    border-radius:0!important;
+    background: var(--green)!important;
+}
+footer button:hover{ 
+   background: black!important;
+   color: white!important;
+   border: 1px solid black!important;
+}
+footer i{
+    color: var(--green);
+}
+footer i:hover{
+    color: black;
+    font-size: 1.4rem;
+    transition:var(--transition);
+}
+/***RESPONSIVE***/
+@media(max-width:760px){
+   .welcome h2{
+       font-size: 2rem;
+   }
+   .welcome img{
+    margin:30px 0;
+   }
+   display-3{
+    font-size: 2rem;
+   }
+   .featuredServices .col-md-4{
+       margin-bottom: 30px;
+   }
+   .newHairstyle .col-md-5{
+       background:white ;
+       margin-left: 0px;
+   }
+   .display-4{
+       font-size: 2rem;
+   }
+}
